@@ -1,0 +1,307 @@
+html {
+	font-size: 16px;
+}
+
+/*для каждого тега прописал font-size, для того чтобы increaseFontSize() менял текст и внутри этих тегов*/
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+body {
+	font-family: 'Monserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	background-color: #fff;
+	min-width: 320px;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+section {
+	padding: 50px 0;
+}
+
+a {
+	color: #111;
+}
+
+a:hover {
+	color: #555;
+}
+
+.btn-light {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.btn-dark {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #111;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-menu {
+	right: 0;
+	left: auto;
+}
+
+.navbar h4 {
+	padding-bottom: 0;
+	padding-top: 5px;
+}
+
+.top-menu li a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #111;
+	height: 1px;
+	transition: all .3s;
+	transform: scale(0);
+}
+
+.top-menu li a:hover::after {
+	transform: scale(1);
+}
+
+.modal-body img {
+	max-width: 100px;
+}
+
+
+
+
+
+.my-carousel {
+	margin: 0;
+}
+
+.my-carousel img {
+	filter: brightness(65%);
+}
+
+.my-carousel .carousel-item {
+	display: flex;
+	max-height: 500px;
+}
+
+.my-carousel .carousel-item img {
+	object-fit: cover;
+}
+
+.carousel-caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.carousel-caption h1 {
+	font-size: 4vw;
+	margin: 0;
+}
+
+.carousel-caption i {
+	font-size: 2vw;
+	margin-top: 20px;
+}
+
+
+.product-card {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+	transition: all .3s;
+}
+
+.product-card:hover {
+	box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+.product-thumb a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	padding: 20px;
+}
+
+.product-thumb img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.product-details {
+	padding: 20px;
+}
+
+.product-details h4 a {
+	font-weight: 500;
+	display: block;
+	height: 60px;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.product-details p {
+	font-size: 15px;
+	margin-bottom: 20px;
+	color: #999;
+	height: 44px;
+	overflow: hidden;
+}
+
+.product-bottom-details {
+	overflow: hidden;
+	border-top: 1px solid #eee;
+	padding-top: 20px;
+}
+
+.product-price {
+	font-size: 18px;
+	color: #ee6e73;
+	font-weight: 600;
+}
+
+.product-price small {
+	color: #ccc;
+	font-weight: 400;
+	text-decoration: line-through;
+	margin-right: 5px;
+}
+
+.product-links a {
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+
+
+
+
+#user-text {
+	font-size: 20px;
+	border-radius: 3px;
+	margin-top: 10px;
+	height: 50px;
+	width: 100%;
+	/* изменяем ширину на 100% */
+	max-width: 500px;
+	/* ограничиваем максимальную ширину */
+}
+
+#user-text-button {
+	margin-top: 10px;
+	margin-right: 3px;
+	height: 25px;
+	width: 100%;
+	/* изменяем ширину на 100% */
+	max-width: 500px;
+	/* ограничиваем максимальную ширину */
+}
+
+.contact-content {
+	text-align: center;
+	background-color: #acacac;
+	margin-top: 0;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	margin-left: 10px;
+	/* уменьшаем отступ слева и справа */
+	margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+
+	/* добавляем медиа-запрос для установки ширины элементов на больших экранах */
+	#user-text {
+		width: 50%;
+		max-width: none;
+		/* убираем ограничение максимальной ширины */
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#user-text-button {
+		width: 50%;
+		max-width: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contact-content {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 768px;
+		/* ограничиваем максимальную ширину контейнера */
+	}
+}
+
+
+.footer {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 50px;
+}
+
+.footer h4 {
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 3px;
+}
+
+.footer a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.footer a:hover {
+	color: #696969;
+	text-decoration: underline;
+}
+
+.footer a,
+.footer li {
+	color: #000000;
+}
+
+.footer li a {
+	display: block;
+}
+
+.footer-icons a {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+}
